@@ -1,15 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asmit Bisesh | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FUTURE_FS_01 | Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Asmit Bisesh</h1>
-    <p>Full Stack Web Development Intern at Future Interns</p>
 
-    <script src="script.js"></script>
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">FS<span class="accent">_01</span></div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="#resume" class="nav-link btn-resume">Resume ↗</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <p class="hero-tag">// Engineering Student &amp; Developer</p>
+      <h1 class="hero-name">
+        <span class="line1">FUTURE</span>
+        <span class="line2">FS_<span class="accent">01</span></span>
+      </h1>
+      <p class="hero-subtitle">Building systems that <span class="typed-text" id="typed"></span><span class="cursor">|</span></p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-label">// 01 — About Me</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Crafting code,<br>solving problems.</h2>
+          <p>I'm a passionate engineering student with a keen interest in building scalable software solutions, exploring new technologies, and pushing the boundaries of what's possible through code.</p>
+          <p>When I'm not coding, I enjoy competitive programming, contributing to open-source projects, and experimenting with hardware prototypes.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num" data-target="15">0</span><span class="stat-num">+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="8">0</span><span class="stat-num">+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="3">0</span><span class="stat-num">+</span>
+              <span class="stat-label">Years Coding</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="code-block">
+            <div class="code-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="code-filename">about.js</span>
+            </div>
+            <pre><code><span class="kw">const</span> <span class="var">developer</span> = {
+  <span class="key">name</span>: <span class="str">"Future FS_01"</span>,
+  <span class="key">role</span>: <span class="str">"Engineering Student"</span>,
+  <span class="key">location</span>: <span class="str">"India"</span>,
+  <span class="key">languages</span>: [
+    <span class="str">"Python"</span>, <span class="str">"JavaScript"</span>,
+    <span class="str">"C++"</span>, <span class="str">"Java"</span>
+  ],
+  <span class="key">passion</span>: <span class="str">"Building impactful tech"</span>,
+  <span class="key">available</span>: <span class="kw">true</span>
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <div class="section-label">// 02 — Skills</div>
+      <h2 class="section-title">Tech Stack</h2>
+      <div class="skills-categories">
+
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+            <div class="skill-item"><span class="skill-name">JavaScript</span><div class="skill-bar"><div class="skill-fill" data-width="82"></div></div></div>
+            <div class="skill-item"><span class="skill-name">C++</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Java</span><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></div>
+            <div class="skill-item"><span class="skill-name">SQL</span><div class="skill-bar"><div class="skill-fill" data-width="78"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Frameworks & Tools</h3>
+          <div class="skill-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Flask</span>
+            <span class="tag">Django</span>
+            <span class="tag">Express</span>
+            <span class="tag">Git</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Linux</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Firebase</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Areas of Interest</h3>
+          <div class="interest-cards">
+            <div class="interest-card">
+              <div class="interest-icon">⚡</div>
+              <span>Full Stack Dev</span>
+            </div>
+            <div class="interest-card">
+              <div class="interest-icon">🤖</div>
+              <span>Machine Learning</span>
+            </div>
+            <div class="interest-card">
+              <div class="interest-icon">☁️</div>
+              <span>Cloud Computing</span>
+            </div>
+            <div class="interest-card">
+              <div class="interest-icon">🔐</div>
+              <span>Cybersecurity</span>
+            </div>
+            <div class="interest-card">
+              <div class="interest-icon">📡</div>
+              <span>IoT & Embedded</span>
+            </div>
+            <div class="interest-card">
+              <div class="interest-icon">🧬</div>
+              <span>Algorithms & DS</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="section-label">// 03 — Projects</div>
+      <h2 class="section-title">Selected Work</h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-badge">Featured</div>
+          <div class="project-num">01</div>
+          <h3>Smart Campus Navigator</h3>
+          <p>An IoT-powered indoor navigation system using BLE beacons and a React Native app. Provides real-time location tracking within campus buildings with 95% accuracy.</p>
+          <div class="project-tags">
+            <span>React Native</span><span>Python</span><span>IoT</span><span>BLE</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">GitHub ↗</a>
+            <a href="#" class="project-link">Live Demo ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-num">02</div>
+          <h3>ML-Powered Code Reviewer</h3>
+          <p>Automated code review tool using transformer models to detect bugs, suggest improvements, and enforce coding standards across Python and JS codebases.</p>
+          <div class="project-tags">
+            <span>Python</span><span>HuggingFace</span><span>FastAPI</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-num">03</div>
+          <h3>Distributed Task Scheduler</h3>
+          <p>Fault-tolerant distributed task scheduling system built with Go and Redis. Supports priority queues, retries, and real-time monitoring dashboard.</p>
+          <div class="project-tags">
+            <span>Go</span><span>Redis</span><span>Docker</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-num">04</div>
+          <h3>Real-Time Chat Platform</h3>
+          <p>End-to-end encrypted messaging platform with WebSocket support, file sharing, and voice notes. Supports 1000+ concurrent users.</p>
+          <div class="project-tags">
+            <span>React</span><span>Node.js</span><span>Socket.io</span><span>MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link">GitHub ↗</a>
+            <a href="#" class="project-link">Live Demo ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section education">
+    <div class="container">
+      <div class="section-label">// 04 — Education</div>
+      <h2 class="section-title">Academic Journey</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2022 — Present</div>
+            <h3>B.Tech in Computer Science & Engineering</h3>
+            <p class="timeline-org">Your University Name</p>
+            <p>CGPA: 8.5/10 · Relevant coursework: Data Structures, OS, DBMS, Computer Networks, Machine Learning, Cloud Computing</p>
+            <div class="timeline-tags">
+              <span>CSE</span><span>Core Branch</span><span>Full Time</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2022</div>
+            <h3>Higher Secondary (Class XII)</h3>
+            <p class="timeline-org">Your School Name · CBSE Board</p>
+            <p>Score: 92% · Physics, Chemistry, Maths, Computer Science</p>
+            <div class="timeline-tags">
+              <span>PCM</span><span>Computer Science</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">Certifications</div>
+            <h3>Professional Certifications</h3>
+            <p class="timeline-org">Various Platforms</p>
+            <ul class="cert-list">
+              <li>AWS Cloud Practitioner — Amazon Web Services</li>
+              <li>Deep Learning Specialization — Coursera / DeepLearning.AI</li>
+              <li>Full Stack Web Development — freeCodeCamp</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume" class="section resume-section">
+    <div class="container">
+      <div class="section-label">// 05 — Resume</div>
+      <div class="resume-cta-block">
+        <div>
+          <h2 class="section-title">Want the full picture?</h2>
+          <p>Download my resume for a complete overview of my experience, skills, and achievements.</p>
+        </div>
+        <a href="resume.pdf" download class="btn-primary btn-large">Download Resume ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-label">// 06 — Contact</div>
+      <div class="contact-grid">
+        <div class="contact-text">
+          <h2 class="section-title">Let's build<br>something together.</h2>
+          <p>Open to internships, collaborative projects, and interesting conversations. Reach out anytime.</p>
+          <div class="contact-links">
+            <a href="mailto:your@email.com" class="contact-link">
+              <span class="contact-icon">✉</span>
+              your@email.com
+            </a>
+            <a href="https://github.com/yourusername" target="_blank" class="contact-link">
+              <span class="contact-icon">⌥</span>
+              github.com/yourusername
+            </a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" class="contact-link">
+              <span class="contact-icon">◈</span>
+              linkedin.com/in/yourusername
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full" id="submit-btn">Send Message →</button>
+          <p class="form-status" id="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">FUTURE_FS_01</span>
+      <span class="footer-copy">Designed & Built with ❤️ · 2025</span>
+      <span class="footer-back"><a href="#home">Back to top ↑</a></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
